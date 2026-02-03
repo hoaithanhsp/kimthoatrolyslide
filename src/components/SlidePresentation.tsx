@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Code2, Maximize2, Minimize2, Download, Sparkles, Zap, FileText, Star, FileSliders, Calculator } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Code2, Maximize2, Minimize2, Download, Sparkles, Zap, FileText, Star, FileSliders, Calculator, User, MapPin, Building } from 'lucide-react';
 import { CodeEditor } from './CodeEditor';
 import { Header } from './Header';
 import { ApiKeyModal } from './ApiKeyModal';
@@ -736,6 +736,38 @@ ${editorContent}
             description="Sử dụng offline"
             color="from-green-500 to-emerald-500"
           />
+        </div>
+
+        {/* Author Section */}
+        <div className="mt-14 mb-8">
+          <h3 className="text-xl font-semibold text-white mb-8 flex items-center justify-center gap-3">
+            <span className="w-12 h-0.5 bg-gradient-to-r from-transparent to-amber-400"></span>
+            <User className="w-5 h-5 text-amber-300" />
+            Tác giả
+            <span className="w-12 h-0.5 bg-gradient-to-l from-transparent to-amber-400"></span>
+          </h3>
+          <div className="max-w-lg mx-auto card-3d rounded-2xl p-6 text-center transition-all duration-200">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-amber-400/50 shadow-lg flex-shrink-0">
+                <img
+                  src="/avatar.jpg"
+                  alt="Cô Trần Thị Kim Thoa"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-left">
+                <h4 className="text-xl font-bold text-white mb-2 text-shadow">Trần Thị Kim Thoa</h4>
+                <div className="flex items-center gap-2 text-teal-100 text-sm mb-1">
+                  <Building className="w-4 h-4 text-amber-300" />
+                  <span>Trường THPT Hoàng Diệu</span>
+                </div>
+                <div className="flex items-center gap-2 text-teal-100 text-sm">
+                  <MapPin className="w-4 h-4 text-amber-300" />
+                  <span>Số 1 Mạc Đĩnh Chi, Phú Lợi, TP. Cần Thơ</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Footer note */}

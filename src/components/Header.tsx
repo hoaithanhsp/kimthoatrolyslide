@@ -18,7 +18,7 @@ export function Header({ onOpenSettings, hasApiKey }: HeaderProps) {
                         TRỢ LÝ TẠO SLIDE
                         <span className="text-amber-400 text-sm animate-pulse">✨</span>
                     </h1>
-                    <p className="text-xs text-teal-100 font-medium">Phát triển bởi thầy Trần Hoài Thanh</p>
+                    <p className="text-xs text-teal-100 font-medium">Phát triển bởi cô Trần Thị Kim Thoa</p>
                 </div>
             </div>
 
